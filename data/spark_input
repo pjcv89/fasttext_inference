@@ -1,0 +1,592 @@
+making an image greyscale with gd library
+transforming selected text with a hotkey
+sql server and the guest account what is this for
+how can i change html attribute names with jquery
+how can i send an array to php through ajax
+c the definitive truth about rand random and arc4random
+gantt chart controls on windows forms
+build tar file from directory in php without exec/passthru
+how do you manage infragistics webgrid data from javascript/ajax code
+how to consume json web services from a windows client
+prevent long word to add horizontal scroll to html view
+is filestream lazy loaded in net
+whats the best way to start using mylyn
+python beyond the basics
+how do you deal with connection strings when deploying an asp net site
+how do i add custom column to existing wss list template
+how to effectively implement sessions in gae
+vector shape on stage appears over dynamic textfield
+should i have one class for every database i use
+how to pass an unpersisted modified object from view back to controller without a form
+game programming and event handlers
+how does traceroute work
+can sql server express be used to effectively administrate a sql server standard/enterprise installation
+getting odd error on net executenonquery
+mac iwork/pages automation
+carbide / symbian c++ change application icon
+are incrementers / decrementers var++ var etc thread safe
+building flex projects in ant/nant
+best update method for mysql db
+sql query count with 0 count
+how to disable visual studio macro `` tip '' balloon
+the necessity of hiding the salt for a hash
+authoritative source on xml sig
+programmatically launching standalone adobe flashplayer on linux/x11
+how to implement a singleton in c #
+while clause in t sql that loops forever
+ms sql 2000 turn off logging during stored procedure
+doctype rss & html entities
+implementing and enforcing coding standards
+how can i get a list of available wireless networks on linux
+why learn perl python ruby if the company is using c++ c # or java as the application language
+c # lambda expressions or delegates as a properties or arguments
+how to return a page of results from sql
+how do you quickly find the url for a win32 api on msdn
+post from one controller action to another not redirect
+db side encryption via nhibernate
+c # in linux environment
+how to generate unit test code for methods
+how can i create prototype methods like javascript in c # net
+converting svg to png using c #
+encoding problem classic asp
+best way to use a db table as a message/job queue
+how do i call net code c # /vb net from vbscript
+is it possible to define in a dependent dll s application config
+c # winforms datagridview/sql compact negative integer in primary key column
+suspending and notifying threads when there is work to do
+eclipse hide paths in the `` open resource '' dialog
+what is the aspnet_client folder for under the iis structure
+what is the best way to see what files are locked in subversion
+daemon threads explanation
+eclipse text comparison order
+how do i extract the version and path from an svn working copy into a nant variable
+is there a way to asynchronously filter an ilist
+percentages of subtotal in a report
+can you use an alias in the where clause in mysql
+ant and the available task what if something is not available
+vertical text with jquery
+what design pattern to use for user authentication in java
+what is the best way to determine the number of days in a month with javascript
+setting the height of a div dynamically
+how can i determine the ip of my router/gateway in java
+creating my own iterators
+how would you attack this polymorphism string building problem
+how do i focus a foreign window
+should i provide a deep clone when implementing icloneable
+be notified when visual/logical child added/removed
+image archive vs image strip
+class methods as event handlers in javascript
+is it true that the smallest memory allocation in net is a byte
+what s the term for design ala `` object method1 method2 method3 ``
+should db layer members be static or instance
+numbering regex submatches
+css `` see through '' background crazy navigation menu problem
+stopping msi from launching an exe in the system context
+parsing t sql to parameterize a query
+sending email in net through gmail
+specify ordinals of c++ exported functions in a dll
+how to serialize an object to xml without getting xmlns `` ``
+how do i calculate the previous business day in ksh shell script
+what is the simplest way to find the difference between 2 times in python
+what are the limits of ruby on rails
+using lists in c #
+rendered pixel width data for each character in a browser s font
+drawing a custom label on a pie chart in yahoo s flash library astra
+can you set or where is the local document root
+which css tag creates a box like this with title
+why is visual studio constantly crashing
+casting array of objects which implement interface ifoo to ifoo in c #
+why is app_offline failing to work as soon as you it starts loading dlls
+in c # or any language what is/are your favourite way of removing repetition
+decoding chunked http with actionscript
+actionscript3 to javascript communication best practices
+what techniques can you use to profile your code
+thotkey with win key support
+authenticating against active directory with java on linux
+how can i convert my current page to pdf after some content dynamically added via ajax
+mvc preview 4 no route in the route table matches the supplied values
+unix socket implementation for java
+sql delete suspended in activity monitor
+anybody know why sql server 2005 throws `` sqloledb failed with no error message available result code e_fail 0x80004005 ``
+how do you maintain large t sql procedures
+how can i ban a whole company from my web site
+asp net users are logged out when deploying a new file to the server
+how to add a `` driver '' to javax comm serial port programming in java
+has and belongs to many relationship with multiple databases
+unicode vs str decode for a utf8 encoded byte string python 2 x
+html over flash without stopping interaction with flash
+how do i fix a net webservice timeout causing a unsupportedmediaexception in a java client
+sorting and grouping nested lists in python
+find all storage devices attached to a linux machine
+does the iphone timeout if a function takes too long to execute
+asp net mvc beta 1 defaultmodelbinder wrongly persists parameter and validation state between unrelated requests
+custom properties in xaml of system windows window
+2d javascript array
+uiwebview within a scrollview does not redraw
+how do you optimise your javascript
+how to add a dynamic weather ticker to the webpage
+is there an alternative for sleep in c
+patterns for the overlap of two objects
+how to do unit testing with uncertainties
+what does it mean when a bug doesn t crash the program
+config values in db or file
+mvc and jquery validation where to weave the javascript and how to embed into master page
+is there a way to handle a variable number of parameters in a template class
+determine if type is a pointer in a template function
+can t create a subversion repository with eclipse 3 4 0 svn 1 5 1
+visual studio 2005 stopped adding code behind files
+http on examine response observer possible to block response from further processing
+std wcout to console window in xcode
+how do you retrieve a list of logged in/connected users in net
+http/ajax gwt vs eclipse gui for thin client deployment
+virtual directory in asp net project
+cross platform editor control
+database engines comparison windows mobile
+protecting javascript code in a ff extension
+statistics engine for java ee web application
+best way to manipulate pages while embedding webkit
+how to generate urls in django
+any have a visual studio shortcut/macro for toggling break on handled/unhandled exceptions
+what fields should be indexed on a given table
+what s the nicest way to do observer/observable in objective c iphone version
+sql 2005 should i roll my own log shipping
+add multiple user control of the same type to a page
+how to force a redraw of my application s entry in the taskbar
+reading an xml file using fileinputstream for java
+sharepoint spcontext list in a custom application page
+selecting rows where first n chars are equal mysql
+not showing dialog when opening file in acrobat pro using applescript
+center a block of content when you don t know its width in advance
+how to synchronize two subversion repositories
+design patterns architecture astronaut
+using linq with wcf
+using boost shared_ptr in a library s public interface
+apply css dynamically in asp net 2 0
+how to get the device name in c #
+ddd and asynchronous repositories
+how to return json from a 2 0 asmx web service
+tool for viewing x 509 certificates
+initialize a const array in a class initializer in c++
+is it possible to call javascript s onsubmit event programatically on a form
+synchronize sourcesafe with svn
+how do i add html links in c # textbox
+writing/using c++ libraries
+sidebar form
+how to do a jquery ajax call to a subdomain
+wrapping visual c++ in c #
+embedding xulrunner application on java
+how to sendkeys f12 from current net form/application
+silverlight databinding error works in wpf though
+pros and cons of using db id in the url
+controlling the wcf xmlserializer
+dropdownlist control with s for asp net webforms
+need help variable creation in python continuation
+java date format incompatible with xquery xs date format how to fix
+what are some excellent examples of user sign up forms on the web
+any good sql anywhere database schema comparison tools
+windows sharepoint services vs microsoft office sharepoint server
+what is the meaning of `` `` in c #
+read from msg files
+insert dates in the return from a query where there is none
+how can i programmatically test an http connection
+how to deal with an undocumented api/framework under net
+show weights in jgrapht
+best way to access user/site settings
+can you search sql server 2005 stored procedure content
+what s the maximum amount of ram i can use in a windows box
+http status for functional redirect
+how to get t4 files to build in visual studio
+how to animate a change in css using jquery
+iphone app crashing with nsunknownkeyexception setvalue forundefinedkey
+what is the overhead cost associated with ioc containers like structuremap
+how to detect whether vista uac is enabled
+clean document roles in a doc library
+is there really no way to follow up dataset parent relation in xaml binding
+c # reflection getting the fields of a datarow from a typed dataset
+specify parts of the header that have to be signed and/or encrypted in wcf with binding that support standards
+bespoke sql server encoding sproc is there a neater way of doing this
+implementing iinternetzonemanager in net
+async method call
+finding first row in a rdlc table
+how many unit tests should i write per function/method
+download files to local drive when sshed
+is there a mvc pattern for c # in wpf
+how do i make a generic object list work from a specific base class
+how to find the mime type of a file in python
+a delphi/freepascal lib or function that emulates the php s function parse_url
+something like a callback delegate function in php
+how to create a picture with animated aspects programmatically
+how to update a text or ntext field in sql server 2000
+how to check if a trigger is invalid
+transfer variables between php pages
+how do you execute a javascript function without onclick like `` grippie '' in a new post on sof
+best way to add full web search to my site
+iphone and html5 cache manifest
+is uml a good notation for messaging systems
+report generation
+div s vs tables or css vs being stupid
+why does the bitconverter return bytes and how can i get the bits then
+how do you specify a port range for java sockets
+is it possible to use nhibernate with paradox database
+is overloading the only way to have default function arguments in c #
+how do i get a particular word from a string in php
+using server side xml parser to generate html content
+where should a subversion repository be
+what s the best way to get the last inserted id using sqlite from java
+initializing a static std map in c++
+how to find out if a file exists in c # / net
+equivalent of java s concurrenthashmap in c #
+t4 template directory missing on build server
+finding a doi in a document or page
+abstraction away from css
+how to concatenate strings of a string field in a postgresql group by query
+how can i programmatically determine if my workstation is locked
+object oriented questions in javascript
+can garbage collection coexist with explicit memory management
+i ve never encountered a well written business layer any advice
+c # compiler and caching of local variables
+what exception should be thrown when an ado net query can not retrieve the requested data
+multiple submit buttons/forms in rails
+window border width and height in win32 how do i get it
+how to dynamically call child class methods in php 5
+is it possible to programmatically distinguish between versions of sql server
+dynamic logical expression parsing/evaluation in php
+is there a way to make text unselectable on an html page
+asp net mvc vs webforms for first page load speed for big projects
+how does one add a custom build step to an automake based project in kdevelop
+similar thing to rjs used in ruby on rails in the java web app world
+history data from ie
+disappearing foreign keys in phpmyadmin
+how do i find the name of the calling function
+persistent storage of encrypted data using net
+how to unit test an object with database queries
+visual studio 2008 / web site problem
+create empty c # event handlers automatically
+how can i add a big flash banner to the top of my wordpress blog
+how to check if file is ascii or binary in c++
+compact framework any implementation of the image fromstream stream boolean boolean
+what is a view in oracle
+can you specify which svn branches with git svn
+what is the best approach for decoupled database design in terms of data sharing
+duplicating jquery datepicker
+filenotfound exception when using xmlserializer
+apache/tomcat error wrong pages being delivered
+java stringbuffer & concatenation
+programming problem fax compression
+how to change directory security attributes using installshield
+how do i open office 2007 files stored on a website
+issues with client consuming a net web service upgraded from net 1 1 to 3 5
+qdockwidget initial width
+delegating a task in and getting notified when it completes in c #
+asp net ajax textbox readonly state
+joins and where conditions
+how to get name associated with open handle
+sending e mail from a custom sql server reporting services delivery extension
+how to make user controls know about css classes in asp net
+draining standard error in java
+is gcj gnu compiler for java a viable tool for publishing a webapp
+how do i set a sql server script s timeout from within the script
+version of xslt in iphone
+accessing python egg s own metadata
+how can i override the onbeforeunload dialog and replace it with my own
+migrate from subversion to team foundation server
+get timer ticks in python
+how to efficiently sql select newest entries from a mysql database
+perform token replacements using vs post build event command
+seeking example delphi prism asp net application using sql server
+how to create an xps document
+speed difference in using inline strings vs concatenation in php5
+how do you run android instrumentation tests from eclipse
+passing input to a state machine c #
+running multiple virtual directories on iis any performance issues
+mysql create table if not exists
+uml connector direction
+rollover effect using jquery
+best ruby on rails social networking framework
+flash screenshot
+find all drive letters in java
+why does asp net webforms need the runat `` server '' attribute
+objections against java webstart
+set a usercontrol property to not show up in vs properties window
+enabling controls at moment of opening a form in access
+edit html meta tag w/ asp net
+how should i import highly formatted data from excel to a database
+passing a value from php to javascript
+parsing exact dates in c # shouldn t force you to create an iformatprovider
+c++ reading from a file blocks any further writing why
+using a vector of column names to generate a sql statement
+how to resolve this vc++ 6 0 linker error
+weird ie & javascript issue
+xmldocument dropping encoded characters
+reference counting in php
+which editor would you give your mom to let her edit her own website
+delphi project needing runtime packages even with runtime packages off
+how do i create a web application where i do not have access to the data
+are there problems with rendering wpf over remote desktop under windows xp
+php $ _get sort problem
+what should be included in a c # programming standard
+why do people use tarballs
+input audio as a stream in cf 3 5
+two phase commit/shared transaction
+what s the best way to create a drop down list in a windows application using visual basic
+deployment of custom content type forms cqwp and xsl
+is there a fast way to transfer all the variables of one identical object into another in c #
+jetty reload tag file in jar
+why is rspec so slow under rails
+automated way to detect tests that can t fail checked in to get by minmum code coverage
+exit edit mode
+why doesn t backcolor work for tabcontrols in net
+excel 2002 add in not loading when the application opens
+any good collection module in perl
+http request timeout
+testing for whitespace in sql server
+embedding intellisense xml documentation in assembly
+what are the main differences between xhtml and html
+sensitive data in viewstate
+deterministic dispose of threadstatic objects
+release configuration management
+drag n drop one or more mails from outlook to c # wpf application
+is regex case insensitivity slower
+in mvc when do you use and
+image processing in silverlight 2
+non member non friend function syntax
+how can i reverse the on bits in a byte
+asp net mvc viewdata null
+what are some techniques for code generation
+linq to sql
+find a private field with reflection
+visual studio on a mac
+extracting a parenthesized python expression from a string
+how do i add a new replicated table to a sql server 2005 db that is in merge replication
+expose a specific net object as json
+comparing arrays of objects in javascript
+c/objc/c++/java compilers
+how to have a label inherite a composite s gc in swt
+how much does it cost to develop an iphone application
+how can i java webstart multiple dependent native libraries
+to disable the backbutton of browser window using javascript
+mssql2000 get list of role members
+extracting text from a pdf using jboss richfaces
+png transparency with php
+can someone point me to some guides for wpf
+generating absolute urls from seam emails
+getting the last modified date of a html file
+rails model attributes without corresponding column in db
+vector or diagram drawing webservice
+bring a console window to front in c #
+can not execute program if using boost c++ libraries in debug version on winxp
+symfony propel criteria
+any tool that can upgrade net 1 1 winform code to net 2 0 `` style ''
+is it possible to delete subdomain cookies
+how to read the value of a text input in a flash swf from a flex app
+any experience with the deliverance system
+how to debug com object in visual studio 6 0 that is created in an asp page
+declare and throw vs throw without being declared exceptions
+add to right click application menu in taskbar in net
+converting guid to integer and back
+what s all this business about flash flex adobe air java fx and silverlight
+am i missing something about linq
+select from same table as an insert or update
+accessing isight programatically
+asp net aspx page code runs impersonated though impersonation is disabled
+what are effective options for embedding video in an asp net web site
+buttons in gridview control
+is it possible to view all services/types registered to structuremap
+bookmarked page redirect
+multiple foreign keys
+why is it that utf 8 encoding is used when interacting with a unix/linux environment
+is there a maximum number of characters that can be written using a streamwriter
+c # 4 0 feedback
+php function which does syntax color parsing for multiple languages
+how to check if php array is associative or sequential
+selecting an index in a qlistview
+tetris piece rotation algorithm
+getting a full list of the urls in a rails application
+mssqlserver 2008 in virtual pc
+64 bit tools like boundschecker & purify
+is there a source control system that allows tracking of file name changes
+slow refresh on panel scrolling
+getting the xml data inside custom xpath function
+how can i scale the content of an iframe
+what is your convention for specifying complex sql queries in rails
+python filter/remove urls from a list
+locale independent way of getting standard windows registry security object
+how can i show scrollbars on a system windows forms textbox only when the text doesn t fit
+why does java not have block scoped variable declarations
+bat file to run a exe at the command prompt
+is it possible to set code behind a resource dictionary in wpf for event handling
+how to search date in sql
+perform a modulus in a huge number
+what is the difference between cil and msil il
+sql query order by
+user configurable security in multi tenant asp net website
+how new programming frameworks help analysts designers and programmers better work together
+which javascript library you recommend to use with java ee + struts + ibatis
+is there a better windows console window
+how can i script a no cost notification of batch file errors/returns
+any big sites using client side xslt
+different output from midl exe 6 and midl exe 7
+how to remove paths from tabs in visual studio 2008
+what is the best way to implement a singleton pattern class in actionscript 3
+regular expressions in unicode strings
+can i test if a regex is valid in c # without throwing exception
+how can i clear class dbi s internal cache
+microsoft net framework 3 5 sp1 setup fails
+do ocunit and ocmock work on the iphone sdk
+what are good ways to design or diagram state
+datatable vs dataset
+visual studio fails to deploy report to msrs
+ideal php session size
+lock / prevent edit of source files on linux using c++
+aggregate login control asp net
+can i use css in directory listing of firefox
+why doesn t c++ have a pointer to member function type
+function pointer to class member function problems
+regex to match against something that is not a specific substring
+how do i deploy an adf business component
+can i change the input behaviour of a datetimepicker control
+asp net session and storing objects that use com interop
+subsonic subsonic sqlquery & dates
+is there an idiomatic way to listen for changes to the dom using the prototype library
+multiple rows with jcarousel
+how can i make a button like digg it for my website
+how do i sum a list < > of arrays
+using noweb on a large java project
+vs2008 ide giving 5 second latency when switching tabs between aspx and aspx cs how come
+understanding jdbc internals
+where did all the java applets go
+how many dimensions in an array with no value
+persistence solutions for c++ with a sql database
+best practice for graceful replace of read only sql server database
+how can i execute a given function on every element of a complicated data structure in perl
+pexpect running ssh copy id is hanging when trying to spawn a second process
+how to add bottom padding to a div that contains floating divs
+how can i use rlike mysql function inside of sql server 2005
+question speechsynthesizer setoutputtoaudiostream audio format problem
+invalid qname when transforming a net xsltransform
+what is the best way to know when the uiviewcontroller above me in the stack has been popped
+hibernate auto discovery and generation of of database mappings to pojos
+best compiler warning level for c/c++ compilers
+curl equivalent in java
+how do you bind in xaml to a dynamic xpath
+asp net display pdf in a asp net web page
+i need help sample project
+how to register file types/extensions with a wix installer
+c # generic sorted container that can return the sorted position of a newly added object
+classic asp intranet and new asp net applications
+where does rails store data created by saving activerecord objects during tests
+sql server datetime conversion failure
+what are the differences between perl python awk and sed
+how to convert std string to lower case
+i m looking for a way to search the values in a net hashtable using wildcards
+data verifications in getter/setter or elsewhere
+c # net 3 0/3 5 features in 2 0 using visual studio 2008
+how to restrict client control area in a custom winforms control
+expose java class as soap webservice how
+get performance counter instance name w3wp from asp net worker process id
+code golf combining multiple sorted lists into a single sorted list
+sql server profiler how to filter trace to only display events from one database
+how do i query multiple sql tables for a specific key value pair
+how do i slice an array in excel vba
+retrieving the new id from a sqldataadaptor update
+where d my generic actionlink go
+how can i filter out the rows which contain a particular column with null or empty data in sql
+another linq pivot problem convert sql script to linq
+what s the difference between int and int in c #
+what s a good way to check if two datetimes are on the same calendar day in tsql
+determine whether browser allows focus on radios/checkboxes
+update fonts recursively on a delphi form
+regarding home page
+why is it bad practice to make multiple database connections in one request
+is catalyst+mason+template toolkit worth learning rather than sticking to lamp+axkit
+iphone programming impressions opinions
+mingw library converted to windows library gives odd link in vc++6
+database schema design
+how to restructure this code hierarchy relating to the law of demeter
+what is the difference between ruby and python versions of '' self ''
+what program can i use to generate diagrams of sql view/table structure
+when using ant how can i define a task only if i have some specific java version
+how to script visual studio 2008 from python
+what is the javascript mime type for the type attribute of a script tag
+need help handling documents using dom4j
+checkstyle for actionscript flex
+is endian conversion required for wchar_t data
+looping over elements in jquery
+saving java object graphs as xml file
+how to walk the methods and their properties contained in a dll
+how do i find the type of the object instance of the caller of the current function
+start program on usb hardware plugin
+how can you emulate a mailing list in django
+inline disabling of firefox spellcheck
+setting up our new dev server what is the easiest way to assign multiple ip addresses
+windows domain changed cause sql2005 login fail
+subsonic join issue
+custom aggregate functions in ms sql server
+vb net importing classes
+questions for python > scheme conversion
+what s the difference between a worker thread and an i/o thread
+determine the size of a pipe without calling read
+design pattern for implementing plugins in your application
+random image picker php
+google map overlay icon disappears at certain zoom level
+parameterized sql queries
+systemsounds play not working
+what does $ hash $ key | do in perl
+what are the pros and cons of filemaker
+are `` dirty reads '' safe to use in terracotta
+how do i update a gridview from a page method from code behind
+why don t my htmlhelper extensions work
+vs2005 how to not have vs try to parse text file resources as html
+splitting a file and its lines under linux/bash
+fetch one row per account id from list
+use type of object in hql where clause
+php mail not working windows 2003 iis smtp
+what can cause intermittent ora 12519 tns no appropriate handler found errors
+how can i unit test a windows service
+what is the best way to add summary tags to a generated webservice proxy class
+dynamic url for dojo combobox source
+how do you connect/retrieve data from a mysql database using objects in php
+css and lack of constants/variables issue
+seeding java util random with consecutive numbers
+c++ mark as deprecated
+what deployment directories do you use for rails applications deploying to a debian box
+how do you get the last record generated in a recursive cte
+convert html to pdf with linked documents inline
+is caml the only way to query moss
+better way of returning the values of a column in active record
+virtual 360Ã¢Âº stitching and presentation software for use on php driven website
+add custom textboxcell to a datagridview control that contains a button to open the filedialog
+normalizing a table with low integrity
+how do you design a functional program
+back button with iframes
+pluggable edit component in jquery
+most efficient way to close a load page using the x sign in jquery
+best approach for configuring multiple net applications
+c++ odd compile error error changes meaning of `` object '' from class `` object ''
+use data with variable structure
+how do i insert or update or overwrite a record using nhibernate
+c++ dll not exposing the entire class
+mysql c api using results
+needed wrappable counter where do `` the right thing '' language c
+i understand threading in theory but not in practice in net
+javascript alerting from a c # class
+mapping a class with multiple collection properties containing the same object type
+better way to implement an html helper method
+how to move documents and list items in windows sharepoint services
+domain driven design question
+how do i skip items when tabbing without using tabindex
+what do i have to do to make my wh_shell or wh_cbt hook procedure receive events from other processes
+i want to find all if statements in c # code which are not followed by brackets through regex
+illustrating usage of the volatile keyword in c #
+tickmark algorithm for a graph axis
+search for a regexp in a java arraylist
+vs 2008 detachable code tabs
+is the pageaction details route necessary in the default dynamic data template
+`` functionoids ''
+partial keyword searching ms sql 2005
+run custom javascript whenever a client side asp net validator is triggered
+trim whitespace from middle of string
+is wpf production ready
+what javascript rich text editor will not break the browser s spellcheck
+how to justify more ram for sql server 2005
+what s the best way to get started with osgi

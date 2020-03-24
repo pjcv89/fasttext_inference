@@ -24,11 +24,11 @@ Tools:
 
 Python libraries:
 
--[NumPy](https://pypi.org/project/numpy/)
--[Pandas](https://pypi.org/project/pandas/)
--[fastText](https://pypi.org/project/fasttext/)
--[PySpark](https://pypi.org/project/pyspark/)
--[PyArrow 0.14.1](https://pypi.org/project/pyarrow/0.14.1/)
+- [NumPy](https://pypi.org/project/numpy/)
+- [Pandas](https://pypi.org/project/pandas/)
+- [fastText](https://pypi.org/project/fasttext/)
+- [PySpark](https://pypi.org/project/pyspark/)
+- [PyArrow 0.14.1](https://pypi.org/project/pyarrow/0.14.1/)
 
 ## Usage 
 

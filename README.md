@@ -36,11 +36,9 @@ Once you have chosen a proper working directory on your local machine, clone thi
 
 ```bash
 git clone https://github.com/pjcv89/fasttext_inference.git
-```
-
-```bash
 cd fasttext_inference 
 ```
+
 Now, build the image using the provided Dockerfile, and give it a name and a tag. For example:
 
 ```bash
@@ -77,7 +75,7 @@ The following files are provided:
 - ``Dockerfile``: The Dockerfile to build the image.
 - ``classifier.py``: Python file with required functions to construct the udf's and called by the Python script.
 - ``inference.py``: Python script to be executed via `spark-submit`.
-- ``Prototypes_and_tests.ipynb``: The development notebook which contains some prototyping code for the Python script and some performance tests.
+- ``Prototypes_and_tests.ipynb``: The development notebook which contains some prototyping code for the Python script and some performance tests. You can view the notebook with Jupyter Notebook Viewer [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/Prototypes_and_tests.ipynb).
 
 After executing the installation scripts, the following folders will be present:
 - */data*: It contains the  `test` and `spark_input` text files. The latter is just the unlabeled version of the former, and ready for inference. It also contains the folder */spark_output* where output files will be persisted after executing the Python script.

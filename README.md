@@ -64,8 +64,8 @@ The script aims to take a text file ready for inference specified via the `--inp
 
 Additionally, we can choose:
 
-- To retrieve single predictions (the prediction with highest probability for each instance, this is the default behavior in the script) or multiple predictions (the top-3 predictions for each instance (via the `--multi-pred` flag). 
-- To use standard Spark UDF's (one-row-at-a-time execution of UDF, this is the default behavior in the script) or to use Pandas UDF's for PySpark (execution of UDF by chunks of Pandas Series), which are built on top of [Arrow](https://arrow.apache.org/).
+- To retrieve single predictions (the prediction with highest probability for each instance, this is the default behavior in the script) or multiple predictions (the top-3 predictions for each instance) via the `--multi-pred` flag. 
+- To use standard Spark UDF's (one-row-at-a-time execution of UDF, this is the default behavior in the script) or to use Pandas UDF's for PySpark (execution of UDF by chunks of Pandas Series), which are built on top of [Arrow](https://arrow.apache.org/), via the `--use-arrow` flag. 
 
 For example, launching the following job will use the standard UDF's approach and retrieve single predictions: 
 

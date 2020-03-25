@@ -14,7 +14,7 @@ Thus, the aim of the tutorial is to show a way to perform scalable inference on 
 
 ## Requirements
 
-Make sure you have [Docker](https://www.docker.com/get-started) installed in your machine . The Docker base image is [this](https://hub.docker.com/r/continuumio/miniconda3), which has a standard installation of [miniconda](https://docs.conda.io/en/latest/miniconda.html) (based on Python 3.7). As you will be able to see from the Dockerfile, the following tools and libraries are installed when building the image.
+Make sure you have [Docker](https://www.docker.com/get-started) installed in your machine. The Docker base image is [this](https://hub.docker.com/r/continuumio/miniconda3), which has a standard installation of [miniconda](https://docs.conda.io/en/latest/miniconda.html) (based on Python 3.7). As you will be able to see from the Dockerfile, the following tools and libraries are installed when building the image.
 
 Tools:
 

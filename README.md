@@ -67,13 +67,13 @@ Additionally, we can choose:
 - To retrieve single predictions (the prediction with highest probability for each instance, this is the default behavior in the script) or multiple predictions (the top-3 predictions for each instance (via the `--multi-pred` flag). 
 - To use standard Spark UDF's (one-row-at-a-time execution of UDF, this is the default behavior in the script) or to use Pandas UDF's for PySpark (execution of UDF by chunks of Pandas Series), which are built on top of [Arrow](https://arrow.apache.org/).
 
-For example, launching the following job will use the standard UDF's  and retrieve single predictions: 
+For example, launching the following job will use the standard UDF's approach and retrieve single predictions: 
 
 ```bash
 spark-submit inference.py --input-file data/spark_input --output-file data/spark_output
 ```
 
-While the following command will use Pandas UDF's approach and retrieve multiple predictions instead:
+While launching the following job will use Pandas UDF's approach and retrieve multiple predictions instead:
 
 ```bash
 spark-submit inference.py --input-file data/spark_input --output-file data/spark_output --use-arrow --multi-pred

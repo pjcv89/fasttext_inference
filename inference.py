@@ -30,6 +30,7 @@ args = parser.parse_args()
 
 if __name__ == "__main__":
     spark = SparkSession.builder.appName('mysession').getOrCreate()
+    spark.conf.set("spark.sql.execution.arrow.enabled", "true")
     schema = StructType([StructField("input", StringType())])
     df_input = spark.read.csv(args.input_file, header=False, schema=schema)
 

@@ -65,7 +65,7 @@ The script aims to take a text file ready for inference specified via the `--inp
 Additionally, we can choose:
 
 - To retrieve single predictions (the prediction with highest probability for each instance, this is the default behavior in the script) or multiple predictions (the top-3 predictions for each instance) via the `--multi-pred` flag. 
-- To use standard Spark UDF's (one-row-at-a-time execution of UDF, this is the default behavior in the script) or to use Pandas UDF's for PySpark (execution of UDF by chunks of Pandas Series), which are built on top of [Arrow](https://arrow.apache.org/), via the `--use-arrow` flag. 
+- To use standard Spark UDF's (one-row-at-a-time execution of UDF, this is the default behavior in the script) or to use Pandas UDF's for PySpark (execution of UDF by chunks of `pandas.Series`), which are built on top of [Arrow](https://arrow.apache.org/), via the `--use-arrow` flag. 
 
 For example, launching the following job will use the standard UDF's approach and retrieve single predictions: 
 
@@ -96,7 +96,7 @@ The following files are provided:
 - ``inference.py``: Python script to be executed via `spark-submit`.
 - ``Prototypes_and_tests.ipynb``: The development notebook which contains some prototyping code for the Python script and some performance tests. You can view the notebook with Jupyter Notebook Viewer [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/Prototypes_and_tests.ipynb).
 
-The following folders present:
+The following folders are present:
 - */data*: It contains the  `test` and `spark_input` text files. The latter is just the unlabeled version of the former, and ready for inference. It also contains the folder */spark_output* where output files will be persisted after executing the Python script.
 - */models*: It contains the already trained fastText model, called `ft_tuned.ftz`
 

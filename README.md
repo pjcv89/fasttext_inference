@@ -63,9 +63,9 @@ The purpose of both scripts is to take a Parquet file ready for inference specif
 
 In both scripts we can choose between:
 - Retrieving single predictions (the prediction with highest probability for each instance, whenever its probability is above a certain threshold). 
--  Retrieving multiple predictions (those predictions whose probabilities are above a certain threshold, retrieving at most $k$ predictions for each instance) via the `--multi-pred` flag. 
+-  Retrieving multiple predictions (those predictions whose probabilities are above a certain threshold, retrieving at most *k* predictions for each instance) via the `--multi-pred` flag. 
 
-Note that in either case, if the threshold condition is not met, a `null` value is returned. Currently the default values of the threshold and $k$ are set to `threshold=0.10` and `k=3`.
+Note that in either case, if the threshold condition is not met, a `null` value is returned. Currently the default values of the threshold and *k* are set to `threshold=0.10` and `k=3`.
 
 ##### Using UDF's approach  (`inference.py` script)
 

@@ -1,8 +1,8 @@
-# fastText inference via PySpark 
+# fastText inference with PySpark 
 
 ## Overview
 
-This repo. shows how to perform  inference using a [fastText](https://fasttext.cc/) model via PySpark user defined functions (**UDF's**), and via RDD's **mapPartitions**.
+This repo. shows how to perform  inference using a [fastText](https://fasttext.cc/) model with PySpark via user defined functions (**UDF's**), and via RDD's **mapPartitions**.
 
 For this illustrative example, we consider we have used the [stacksample](https://www.kaggle.com/stackoverflow/stacksample)  data for the use case where given (short) text of questions titles, we want to predict their most probable tags. For more info. regarding the data, the processing, and the training stage, you can refer to this [tutorial](https://github.com/pjcv89/AutoTag/).
 

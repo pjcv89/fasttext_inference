@@ -123,6 +123,16 @@ The following folders are present:
 - `/data`: It contains the  `test` and `test_unlabeled` text files, where the latter is just the unlabeled version of the former. It also contains `/input.parquet` folder where the input Parquet file built from `test_unlabeled` and ready for inference is located, and `/output.parquet`folder where the output Parquet file  with predictions will be persisted after executing any of the Python scripts.
 - `/models`: It contains the already trained fastText model, called `ft_tuned.ftz`
 
+
+## Important note: Distributed settings
+
+Please note that all examples here use Spark's local mode. For the UDF's approach shown here, in a distributed setting, we would need to distribute the model file and the required Python module across nodes. Once the `SparkSession` has been defined, we would need to add something like the following in the `inference.py` script:
+
+```python
+spark.sparkContext.addFile('models/ft_tuned.ftz')
+spark.sparkContext.addPyFile('./classifier.py')
+```
+
 ## Resources
 
 ### Engineering

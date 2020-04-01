@@ -112,12 +112,12 @@ The following files are provided:
 - ``classifier.py``: Python file with required functions to construct the UDF's and called by the ``inference.py`` Python script.
 - ``inference.py``: Python script relative to the UDF's approach, to be executed via `spark-submit`.
 - ``inference_mapp.py``: Python script relative to the RDD's mapPartitions approach, to be executed via `spark-submit`.
-- ``00_Input_Data.ipynb``: Notebook that shows how the input Parquet file was generated.
+- ``00_Input_Data.ipynb``: Notebook that shows how the input Parquet file was generated. You can view it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/00_Input_Data.ipynb).
 - The following notebooks, which contain some prototyping code for the Python scripts and some performance tests. Names are self-explanatory.
 
-1. ``01_Standard_UDFs.ipynb``:
-2. ``02_Pandas_UDFs.ipynb``:
-3. ``03_RDDs_mapPartitions.ipynb``:
+1. ``01_Standard_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/01_Standard_UDFs.ipynb).
+2. ``02_Pandas_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/02_Pandas_UDFs.ipynb).
+3. ``03_RDDs_mapPartitions.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/03_RDDs_mapPartitions.ipynb).
 
 The following folders are present:
 - `/data`: It contains the  `test` and `test_unlabeled` text files, where the latter is just the unlabeled version of the former. It also contains `/input.parquet` folder where the input Parquet file built from `test_unlabeled` and ready for inference is located, and `/output.parquet`folder where the output Parquet file  with predictions will be persisted after executing any of the Python scripts.

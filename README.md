@@ -1,16 +1,17 @@
 # fastText inference via PySpark 
 
 ## Overview
-This tutorial shows how to perform  inference using a [fastText](https://fasttext.cc/) model via PySpark user defined functions (**UDF's**). 
+
+This repo. shows how to perform  inference using a [fastText](https://fasttext.cc/) model via PySpark user defined functions (**UDF's**), and via RDD's **mapPartitions**.
 
 For this illustrative example, we consider we have used the [stacksample](https://www.kaggle.com/stackoverflow/stacksample)  data for the use case where given (short) text of questions titles, we want to predict their most probable tags. For more info. regarding the data, the processing, and the training stage, you can refer to this [tutorial](https://github.com/pjcv89/AutoTag/).
 
-In this tutorial we assume we have:
+Here we assume we have:
 
-- An already trained fastText model.
-- A test dataset with only text input, with already proper processing and cleaning, ready for inference.
+- An already trained fastText model file.
+- A Parquet file with only text input, with already proper processing and cleaning, ready for inference.
 
-Thus, the aim of the tutorial is to show a way to perform scalable inference on the test dataset using the fastText model through PySpark.
+Please note that you can substitute these with another model file and another Parquet file, regarding other use cases. In short, the aim of the repo. is to show alternatives to perform scalable inference on the Parquet file using a fastText model file through PySpark.
 
 ## Requirements
 
@@ -56,27 +57,43 @@ You can execute:
 ```bash
 docker run --name inference -v $PWD:/fasttext_inference -it --entrypoint=/bin/bash fasttext_inference:0.1
 ```
-In this mode, you will be able to invoke `spark-submit` to execute the `inference.py` script from the command line and from the current directory.
+In this mode, you will be able to invoke `spark-submit` to execute the `inference.py` and `inference_mapp.py` scripts from the command line and from the current working directory.
 
-##### About the `inference.py` script 
+The purpose of both scripts is to take a Parquet file ready for inference specified via the `--input-file` argument and produce an output Parquet file with predictions, whose location needs to be specified via the `--output-file` argument.
 
-The script aims to take a text file ready for inference specified via the `--input-file` argument and produce an output text file with predictions, whose location needs to be specified via the `--output-file` argument.
+In both scripts we can choose between:
+- Retrieving single predictions (the prediction with highest probability for each instance, whenever its probability is above a certain threshold). 
+-  Retrieving multiple predictions (those predictions whose probabilities are above a certain threshold, retrieving at most $k$ predictions for each instance) via the `--multi-pred` flag. 
 
-Additionally, we can choose:
+Note that in either case, if the threshold condition is not met, a `null` value is returned. Currently the default values of the threshold and $k$ are set to `threshold=0.10` and `k=3`.
 
-- To retrieve single predictions (the prediction with highest probability for each instance, this is the default behavior in the script) or multiple predictions (the top-3 predictions for each instance) via the `--multi-pred` flag. 
-- To use standard Spark UDF's (one-row-at-a-time execution of UDF, this is the default behavior in the script) or to use Pandas UDF's for PySpark (execution of UDF by chunks of `pandas.Series`), which are built on top of [Arrow](https://arrow.apache.org/), via the `--use-arrow` flag. 
+##### Using UDF's approach  (`inference.py` script)
+
+In this script we can choose between:
+
+- Using Spark UDF's (one-row-at-a-time execution of UDF, this is the default behavior in the script).
+- Using Pandas UDF's for PySpark (execution of UDF by chunks of `pandas.Series`), which are built on top of [Arrow](https://arrow.apache.org/), via the `--use-arrow` flag. 
 
 For example, launching the following job will use the standard UDF's approach and retrieve single predictions: 
 
 ```bash
-spark-submit inference.py --input-file data/spark_input --output-file data/spark_output
+spark-submit inference.py --input-file data/input.parquet --output-file data/output.parquet
 ```
 
 While launching the following job will use Pandas UDF's approach and retrieve multiple predictions instead:
 
 ```bash
-spark-submit inference.py --input-file data/spark_input --output-file data/spark_output --use-arrow --multi-pred
+spark-submit inference.py --input-file data/input.parquet --output-file data/output.parquet --use-arrow --multi-pred
+```
+
+##### Using RDD's mapPartitions approach  (`inference_mapp.py` script)
+
+This approach is inspired by [this discussion](https://www.facebook.com/groups/1174547215919768/?comment_id=2913166652057807&comment_tracking=%7B%22tn%22%3A%22R%22%7D&post_id=2913128998728239) and follows a different logic by using the powerful Spark's [mapPartitions](https://medium.com/@ajaygupta.hbti/apache-spark-mappartitions-a-powerful-narrow-data-transformation-d635964526d6) transformation.
+
+For example, launching the following job will use the RDD's mapPartitions approach and retrieve single multiple predictions:
+
+```bash
+spark-submit inference_mapp.py --input-file data/input.parquet --output-file data/output.parquet --multi-pred
 ```
 
 ### b) Using the Jupyter notebook
@@ -85,20 +102,26 @@ You can execute:
 ```bash
 docker run --name inference -p 8080:8888 -v $PWD:/fasttext_inference fasttext_inference:0.1
 ```
-Jupyter will be launched and you can go to [http://localhost:8080/](http://localhost:8080/). You should copy the token displayed in the command line and paste it in the jupyter welcome page. You will be able to see the files contained in this repo, including the notebook, which you can open to start executing code.
+Jupyter will be launched and you can go to [http://localhost:8080/](http://localhost:8080/). You should copy the token displayed in the command line and paste it in the jupyter welcome page. You will be able to see the files contained in this repo., including the notebook, which you can open to start executing code.
 
 ## Files and folders
 
 The following files are provided:
 
 - ``Dockerfile``: The Dockerfile to build the image.
-- ``classifier.py``: Python file with required functions to construct the UDF's and called by the Python script.
-- ``inference.py``: Python script to be executed via `spark-submit`.
-- ``Prototypes_and_tests.ipynb``: The development notebook which contains some prototyping code for the Python script and some performance tests. You can view the notebook with Jupyter Notebook Viewer [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/Prototypes_and_tests.ipynb).
+- ``classifier.py``: Python file with required functions to construct the UDF's and called by the ``inference.py`` Python script.
+- ``inference.py``: Python script relative to the UDF's approach, to be executed via `spark-submit`.
+- ``inference_mapp.py``: Python script relative to the RDD's mapPartitions approach, to be executed via `spark-submit`.
+- ``00_Input_Data.ipynb``: Notebook that shows how the input Parquet file was generated.
+- The following notebooks, which contain some prototyping code for the Python scripts and some performance tests. Names are self-explanatory.
+
+1. ``01_Standard_UDFs.ipynb``:
+2. ``02_Pandas_UDFs.ipynb``:
+3. ``03_RDDs_mapPartitions.ipynb``:
 
 The following folders are present:
-- */data*: It contains the  `test` and `spark_input` text files. The latter is just the unlabeled version of the former, and ready for inference. It also contains the folder */spark_output* where output files will be persisted after executing the Python script.
-- */models*: It contains the already trained fastText model, called `ft_tuned.ftz`
+- `/data`: It contains the  `test` and `test_unlabeled` text files, where the latter is just the unlabeled version of the former. It also contains `/input.parquet` folder where the input Parquet file built from `test_unlabeled` and ready for inference is located, and `/output.parquet`folder where the output Parquet file  with predictions will be persisted after executing any of the Python scripts.
+- `/models`: It contains the already trained fastText model, called `ft_tuned.ftz`
 
 ## Resources
 
@@ -107,7 +130,7 @@ The following folders are present:
 - Ideas used in this repo.
 1. [Classifying text with fastText in pySpark](https://www.futurice.com/blog/classifying-text-with-fasttext-in-pyspark)
 2. [Prediction at Scale with scikit-learn and PySpark Pandas UDF's](https://medium.com/civis-analytics/prediction-at-scale-with-scikit-learn-and-pyspark-pandas-udfs-51d5ebfb2cd8)
-3. [Introducing Pandas UDF for PySpark](https://databricks.com/blog/2017/10/30/introducing-vectorized-udfs-for-pyspark.html)
+3. [Introducing Pandas UDF's for PySpark](https://databricks.com/blog/2017/10/30/introducing-vectorized-udfs-for-pyspark.html)
 4. [Pandas user-defined functions](https://docs.databricks.com/spark/latest/spark-sql/udf-python-pandas.html#pandas-user-defined-functions)
 5. [PySpark Usage Guide for Pandas with Apache Arrow](https://spark.apache.org/docs/latest/sql-pyspark-pandas-with-arrow.html)
 

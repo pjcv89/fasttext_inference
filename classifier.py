@@ -10,7 +10,7 @@ def get_predictions(sentence, threshold=0.10, k=3):
     """
     Get label prediction(s) for a sentence from a given fastText model.
 
-    It returns at most a k number of labels whose probabilities are greater or equal
+    It returns at most a number of k labels whose probabilities are greater or equal
     than a threshold. If no labels met the criteria given a certain combination
     of k and threshold, a None value is returned.
 
@@ -90,9 +90,9 @@ def predict_series(series_input, multi_prediction=False, rowwise=False):
     :param multi_prediction: bool
         Whether to retrieve one single prediction or multiple predictions.
     :param rowwise: bool
-        Whether to get label predictions for a chunk of sentences (str elements)
-        using pandas.Series.apply method (i.e. iteratively over each sentence, "rowwise") or
-        using fastText's own method for a list with str elements  (i.e. "native").
+        Whether to get label predictions for a chunk of sentences
+        using pandas.Series.apply method (i.e. "rowwise") or
+        using fastText's own method (i.e. "native").
     :return: series_output: pandas.Series (with str elements, or with lists with str elements)
 
     Example
@@ -120,18 +120,18 @@ def predict_series(series_input, multi_prediction=False, rowwise=False):
 
 def make_pandas_udf(multi_prediction=False, rowwise=False):
     """
-    Function to make a Spark udf from the get_predictions function,
+    Function to make a Spark pandas udf from the predict_series function,
     specifying whether to retrieve single label prediction or
     multiple label predictions.
 
     :param multi_prediction: bool
         Whether to retrieve one single prediction or multiple predictions.
     :param rowwise: bool
-        Whether to get label predictions for a chunk of sentences (str elements)
-        using pandas.Series.apply method (i.e. iteratively over each sentence, "rowwise") or
-        using fastText's own method for a list with str elements  (i.e. "native").
+        Whether to get label predictions for a chunk of sentences
+        using pandas.Series.apply method (i.e. "rowwise") or
+        using fastText's own method (i.e. "native").
     :return: pyspark.sql.functions.pandas_udf object
-        Spark pandas user defined function for the get_predictions function.
+        Spark pandas user defined function for the predict_series function.
 
     Example
     -------

@@ -90,7 +90,7 @@ spark-submit inference.py --input-file data/input.parquet --output-file data/out
 
 This approach is inspired by [this discussion](https://www.facebook.com/groups/1174547215919768/?comment_id=2913166652057807&comment_tracking=%7B%22tn%22%3A%22R%22%7D&post_id=2913128998728239) and follows a different logic by using the powerful Spark's [mapPartitions](https://medium.com/@ajaygupta.hbti/apache-spark-mappartitions-a-powerful-narrow-data-transformation-d635964526d6) transformation.
 
-For example, launching the following job will use the RDD's mapPartitions approach and retrieve single multiple predictions:
+For example, launching the following job will use the RDD's mapPartitions approach and retrieve multiple predictions:
 
 ```bash
 spark-submit inference_mapp.py --input-file data/input.parquet --output-file data/output.parquet --multi-pred

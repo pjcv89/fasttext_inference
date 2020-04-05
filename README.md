@@ -135,7 +135,7 @@ The following files are related to this approach:
 
 Please refer to the following posts:
 
-1. [Spark pipe: A one-pipe problem](https://medium.com/@cupreous.bowels/spark-pipe-a-one-pipe-problem-ea1672ee254b)
+1. [Spark pipe: A one-pipe problem](https://bit.ly/2xMMtqj)
 2. [Pipe in Spark](http://blog.madhukaraphatak.com/pipe-in-spark/)
 
 ## Important note: Distributed settings

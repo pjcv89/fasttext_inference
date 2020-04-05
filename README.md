@@ -123,6 +123,20 @@ The following folders are present:
 - `/data`: It contains the  `test` and `test_unlabeled` text files, where the latter is just the unlabeled version of the former. It also contains `/input.parquet` folder where the input Parquet file built from `test_unlabeled` and ready for inference is located, and `/output.parquet`folder where the output Parquet file  with predictions will be persisted after executing any of the Python scripts.
 - `/models`: It contains the already trained fastText model, called `ft_tuned.ftz`
 
+#### **BONUS**: Using RDD's pipe approach 
+
+This approach is also inspired by [this discussion](https://www.facebook.com/groups/1174547215919768/?comment_id=2913166652057807&comment_tracking=%7B%22tn%22%3A%22R%22%7D&post_id=2913128998728239) and uses Spark's [pipe](https://spark.apache.org/docs/latest/api/python/pyspark.html#pyspark.RDD.pipe) method to call external processes. In this case, we use fastText CLI tool to get predictions using a shell script to be called within the `pipe` method. 
+
+The following files are related to this approach: 
+
+- `04_RDDs_pipe.ipynb`: Notebook that shows how to carry out this approach. View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/04_RDDs_pipe.ipynb).
+- `install_fasttext.sh`: Shell script to build fastText from source and install CLI tool. Used in the notebook.
+- `get_predictions.sh`: Shell script to be called within the `pipe` method. Used in the notebook.
+
+Please refer to the following posts:
+
+1. [Spark pipe: A one-pipe problem](https://medium.com/@cupreous.bowels/spark-pipe-a-one-pipe-problem-ea1672ee254b)
+2. [Pipe in Spark](http://blog.madhukaraphatak.com/pipe-in-spark/)
 
 ## Important note: Distributed settings
 

@@ -43,8 +43,9 @@ parser.add_argument('--output-file', action='store', help="name of output file",
 args = parser.parse_args()
 
 if __name__ == "__main__":
-    spark = SparkSession.builder.appName('mysession').getOrCreate()
-    df_input = spark.read.parquet(args.input_file)
+    spark = SparkSession.builder.master("local[4]").appName('mysession').getOrCreate()
+    
+    df_input = spark.read.parquet(args.input_file).repartition(8)
 
     print('Using RDDs mapPartitions\n')
     df_output = df_input.rdd.mapPartitions(lambda partition: fn_partition(partition, args.multi_pred)).toDF()

@@ -1,11 +1,12 @@
 import fasttext
 import pandas as pd
+from pyspark import SparkFiles
 from pyspark.sql.functions import udf, pandas_udf
 from pyspark.sql.types import StringType, ArrayType
 
-model = fasttext.load_model('models/ft_tuned.ftz')
-
-
+modelPath = SparkFiles.get('ft_tuned.ftz')
+model = fasttext.load_model(modelPath)
+    
 def get_predictions(sentence, threshold=0.10, k=3):
     """
     Get label prediction(s) for a sentence from a given fastText model.

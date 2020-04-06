@@ -118,7 +118,7 @@ The following folders are present:
 - `/models`: It contains the already trained fastText model, called `ft_tuned.ftz`
 - `/notebooks`: It contains the following notebooks, which contain some prototyping code for the Python scripts and some performance tests. Names are self-explanatory.
 
-0. ``00_Input_Data.ipynb``: Notebook that shows how the input Parquet file was generated. You can view it [here](https://github.com/pjcv89/fasttext_inference/blob/master/notebooks/00_Input_Data.ipynb).
+0. ``00_Input_Data.ipynb``: Notebook that shows how the input Parquet file was generated. You can view it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/notebooks/00_Input_Data.ipynb).
 1. ``01_Standard_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/notebooks/01_Standard_UDFs.ipynb).
 2. ``02_Pandas_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/notebooks/02_Pandas_UDFs.ipynb).
 3. ``03_RDDs_mapPartitions.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/notebooks/03_RDDs_mapPartitions.ipynb).

@@ -112,24 +112,24 @@ The following files are provided:
 - ``classifier.py``: Python file with required functions to construct the UDF's and called by the ``inference.py`` Python script.
 - ``inference.py``: Python script relative to the UDF's approach, to be executed via `spark-submit`.
 - ``inference_mapp.py``: Python script relative to the RDD's mapPartitions approach, to be executed via `spark-submit`.
-- ``00_Input_Data.ipynb``: Notebook that shows how the input Parquet file was generated. You can view it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/00_Input_Data.ipynb).
-- The following notebooks, which contain some prototyping code for the Python scripts and some performance tests. Names are self-explanatory.
-
-1. ``01_Standard_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/01_Standard_UDFs.ipynb).
-2. ``02_Pandas_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/02_Pandas_UDFs.ipynb).
-3. ``03_RDDs_mapPartitions.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/03_RDDs_mapPartitions.ipynb).
 
 The following folders are present:
 - `/data`: It contains the  `test` and `test_unlabeled` text files, where the latter is just the unlabeled version of the former. It also contains `/input.parquet` folder where the input Parquet file built from `test_unlabeled` and ready for inference is located, and `/output.parquet`folder where the output Parquet file  with predictions will be persisted after executing any of the Python scripts.
 - `/models`: It contains the already trained fastText model, called `ft_tuned.ftz`
+- `/notebooks`: It contains the following notebooks, which contain some prototyping code for the Python scripts and some performance tests. Names are self-explanatory.
+
+0. ``00_Input_Data.ipynb``: Notebook that shows how the input Parquet file was generated. You can view it [here](https://github.com/pjcv89/fasttext_inference/blob/master/notebooks/00_Input_Data.ipynb).
+1. ``01_Standard_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/notebooks/01_Standard_UDFs.ipynb).
+2. ``02_Pandas_UDFs.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/notebooks/02_Pandas_UDFs.ipynb).
+3. ``03_RDDs_mapPartitions.ipynb``: View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/notebooks/03_RDDs_mapPartitions.ipynb).
 
 #### **BONUS**: Using RDD's pipe approach 
 
 This approach is also inspired by [this discussion](https://www.facebook.com/groups/1174547215919768/?comment_id=2913166652057807&comment_tracking=%7B%22tn%22%3A%22R%22%7D&post_id=2913128998728239) and uses Spark's [pipe](https://spark.apache.org/docs/latest/api/python/pyspark.html#pyspark.RDD.pipe) method to call external processes. In this case, we use fastText CLI tool to get predictions using a shell script to be called within the `pipe` method. 
 
-The following files are related to this approach: 
+The `/pipe` folder includes the following files:
 
-- `04_RDDs_pipe.ipynb`: Notebook that shows how to carry out this approach. View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/04_RDDs_pipe.ipynb).
+- `04_RDDs_pipe.ipynb`: Notebook that shows how to carry out this approach. View it [here](https://nbviewer.jupyter.org/github/pjcv89/fasttext_inference/blob/master/pipe/04_RDDs_pipe.ipynb).
 - `install_fasttext.sh`: Shell script to build fastText from source and install CLI tool. Used in the notebook.
 - `get_predictions.sh`: Shell script to be called within the `pipe` method. Used in the notebook.
 
@@ -140,12 +140,14 @@ Please refer to the following posts:
 
 ## Important note: Distributed settings
 
-Please note that all examples here use Spark's local mode. For the UDF's approach shown here, in a distributed setting, we would need to distribute the model file and the required Python module across nodes. Once the `SparkSession` has been defined, we would need to add something like the following in the `inference.py` script:
+Please note that all examples here use Spark's local mode and client mode. For the UDF's approach shown here, in order to make the model file and the Python module available among workers, we have included the following lines in the `inference.py` script:
 
 ```python
 spark.sparkContext.addFile('models/ft_tuned.ftz')
 spark.sparkContext.addPyFile('./classifier.py')
 ```
+
+However, in a distributed setting and in cluster mode, we would need to distribute these files across nodes using the `files` and `--py-files` options instead. See this [question](https://stackoverflow.com/questions/38879478/sparkcontext-addfile-vs-spark-submit-files).
 
 ## Resources
 

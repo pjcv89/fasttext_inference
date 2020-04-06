@@ -6,7 +6,8 @@ from pyspark.sql.types import StringType, ArrayType
 
 modelPath = SparkFiles.get('ft_tuned.ftz')
 model = fasttext.load_model(modelPath)
-    
+
+
 def get_predictions(sentence, threshold=0.10, k=3):
     """
     Get label prediction(s) for a sentence from a given fastText model.

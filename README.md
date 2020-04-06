@@ -96,13 +96,13 @@ For example, launching the following job will use the RDD's mapPartitions approa
 spark-submit inference_mapp.py --input-file data/input.parquet --output-file data/output.parquet --multi-pred
 ```
 
-### b) Using the Jupyter notebook
+### b) Using the Jupyter notebooks
 
 You can execute:
 ```bash
 docker run --name inference -p 8080:8888 -v $PWD:/fasttext_inference fasttext_inference:0.1
 ```
-Jupyter will be launched and you can go to [http://localhost:8080/](http://localhost:8080/). You should copy the token displayed in the command line and paste it in the jupyter welcome page. You will be able to see the files contained in this repo., including the notebook, which you can open to start executing code.
+Jupyter will be launched and you can go to [http://localhost:8080/](http://localhost:8080/). You should copy the token displayed in the command line and paste it in the jupyter welcome page. You will be able to see the files contained in this repo., including the `/notebooks` folder, which you can open to start executing the notebooks.
 
 ## Files and folders
 
